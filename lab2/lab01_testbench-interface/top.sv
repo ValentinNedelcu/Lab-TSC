@@ -10,10 +10,13 @@ module top;
 
   // clock variables
   logic clk;
+
   logic test_clk;
 
+
+
   // interconnecting signals
-  //le comentam dupa ce fac prima parte cu modelsim
+ 
   // logic          load_en;
   //logic          reset_n;
   //opcode_t       opcode;

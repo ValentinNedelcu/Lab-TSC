@@ -5,7 +5,7 @@
  * a scoreboard for self-verification.
  **********************************************************************/
 
-module instr_register_test
+module instr_register_test(tb_icf lab2_if())
   import instr_register_pkg::*;  // user-defined types are defined in instr_register_pkg.sv
   (//input  logic          clk,
    //output logic          load_en,
@@ -17,7 +17,7 @@ module instr_register_test
    //output address_t      read_pointer,
    //input  instruction_t  instruction_word
   );
-tb_icf lab2_if()	
+
   timeunit 1ns/1ns;
   int seed = 555;
 
@@ -39,10 +39,10 @@ tb_icf lab2_if()
     $display("\nWriting values to register stack...");
     @(posedge clk) load_en = 1'b1;  // enable writing to register
     repeat (3) begin
-      @(posedge clk) randomize_transaction;
-      @(negedge clk) print_transaction;
+      @(posedge lab2_if.clk) randomize_transaction;
+      @(negedge lab2_if.clk) print_transaction;
     end
-    @(posedge clk) load_en = 1'b0;  // turn-off writing to register
+    @(posedge lab2_if.clk) load_en = 1'b0;  // turn-off writing to register
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
@@ -50,11 +50,11 @@ tb_icf lab2_if()
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
-      @(posedge clk) read_pointer = i;
-      @(negedge clk) print_results;
+      @(posedge lab2_if.clk) read_pointer = i;
+      @(negedge lab2_if.clk) print_results;
     end
 
-    @(posedge clk) ;
+    @(posedge lab2_if.clk) ;
     $display("\n***********************************************************");
     $display(  "***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***");
     $display(  "***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***");
@@ -72,24 +72,24 @@ tb_icf lab2_if()
     // write_pointer values in a later lab
     //
     static int temp = 0;
-    operand_a     <= $random(seed)%16;                 // between -15 and 15
-    operand_b     <= $unsigned($random)%16;            // between 0 and 15
-    opcode        <= opcode_t'($unsigned($random)%8);  // between 0 and 7, cast to opcode_t type
-    write_pointer <= temp++;
+    lab2_if.operand_a     <= $random(seed)%16;                 // between -15 and 15
+    lab2_if.operand_b     <= $unsigned($random)%16;            // between 0 and 15
+    lab2_if.opcode        <= opcode_t'($unsigned($random)%8);  // between 0 and 7, cast to opcode_t type
+    lab2_if.write_pointer <= temp++;
   endfunction: randomize_transaction
 
   function void print_transaction;
-    $display("Writing to register location %0d: ", write_pointer);
-    $display("  opcode = %0d (%s)", opcode, opcode.name);
-    $display("  operand_a = %0d",   operand_a);
-    $display("  operand_b = %0d\n", operand_b);
+    $display("Writing to register location %0d: ",lab2_if. write_pointer);
+    $display("  opcode = %0d (%s)", lab2_if.opcode, lab2_if.opcode.name);
+    $display("  operand_a = %0d",   lab2_if.operand_a);
+    $display("  operand_b = %0d\n", lab2_if.operand_b);
   endfunction: print_transaction
 
   function void print_results;
     $display("Read from register location %0d: ", read_pointer);
-    $display("  opcode = %0d (%s)", instruction_word.opc, instruction_word.opc.name);
-    $display("  operand_a = %0d",   instruction_word.op_a);
-    $display("  operand_b = %0d\n", instruction_word.op_b);
+    $display("  opcode = %0d (%s)", lab2_if.instruction_word.opc, instruction_word.opc.name);
+    $display("  operand_a = %0d",  lab2_if.instruction_word.op_a);
+    $display("  operand_b = %0d\n", lab2_if.instruction_word.op_b);
   endfunction: print_results
 
 endmodule: instr_register_test
