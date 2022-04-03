@@ -70,6 +70,41 @@
 #   operand_a = -15
 #   operand_b = 13
 # 
+# Writing to register location 3: 
+#   opcode = 2 (PASSB)
+#   operand_a = -8
+#   operand_b = 5
+# 
+# Writing to register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = -9
+#   operand_b = 1
+# 
+# Writing to register location 5: 
+#   opcode = 5 (MULT)
+#   operand_a = 5
+#   operand_b = 6
+# 
+# Writing to register location 6: 
+#   opcode = 4 (SUB)
+#   operand_a = 3
+#   operand_b = 13
+# 
+# Writing to register location 7: 
+#   opcode = 6 (DIV)
+#   operand_a = 12
+#   operand_b = 9
+# 
+# Writing to register location 8: 
+#   opcode = 2 (PASSB)
+#   operand_a = 3
+#   operand_b = 5
+# 
+# Writing to register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 5
+# 
 # 
 # Reading back the same register locations written...
 # Read from register location 0: 
@@ -77,15 +112,70 @@
 #   operand_a = -12
 #   operand_b = 4
 # 
+#   result    = -12
+# 
 # Read from register location 1: 
 #   opcode = 3 (ADD)
 #   operand_a = -9
 #   operand_b = 9
 # 
+#   result    = 0
+# 
 # Read from register location 2: 
 #   opcode = 5 (MULT)
 #   operand_a = -15
 #   operand_b = 13
+# 
+#   result    = -195
+# 
+# Read from register location 3: 
+#   opcode = 2 (PASSB)
+#   operand_a = -8
+#   operand_b = 5
+# 
+#   result    = 5
+# 
+# Read from register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = -9
+#   operand_b = 1
+# 
+#   result    = -9
+# 
+# Read from register location 5: 
+#   opcode = 5 (MULT)
+#   operand_a = 5
+#   operand_b = 6
+# 
+#   result    = 30
+# 
+# Read from register location 6: 
+#   opcode = 4 (SUB)
+#   operand_a = 3
+#   operand_b = 13
+# 
+#   result    = -10
+# 
+# Read from register location 7: 
+#   opcode = 6 (DIV)
+#   operand_a = 12
+#   operand_b = 9
+# 
+#   result    = 1
+# 
+# Read from register location 8: 
+#   opcode = 2 (PASSB)
+#   operand_a = 3
+#   operand_b = 5
+# 
+#   result    = 5
+# 
+# Read from register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 5
+# 
+#   result    = -2
 # 
 # 
 # ***********************************************************
@@ -95,10 +185,9 @@
 # ***********************************************************
 # 
 # ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(61)
-#    Time: 106 ns  Iteration: 1  Instance: /top/test
+#    Time: 246 ns  Iteration: 1  Instance: /top/test
 # 1
 # Break in Module instr_register_test at ../lab01_testbench-interface/instr_register_test.sv line 61
 # Simulation Breakpoint: 1
 # Break in Module instr_register_test at ../lab01_testbench-interface/instr_register_test.sv line 61
 # MACRO ./run.do PAUSED at line 45
-find drivers -source -time {39000 ps} -cause sim:/top/intf_lab/opcode

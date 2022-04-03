@@ -36,7 +36,7 @@ module instr_register_test
 
     $display("\nWriting values to register stack...");
     @(posedge intf_lab.cb.clk) intf_lab.cb.load_en <= 1'b1;  // enable writing to register
-    repeat (3) begin
+    repeat (10) begin
       @(posedge intf_lab.cb.clk) randomize_transaction;
       @(negedge intf_lab.cb.clk) print_transaction;   //printeaza in transcript consola
     end
@@ -44,7 +44,7 @@ module instr_register_test
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
-    for (int i=0; i<=2; i++) begin
+    for (int i=0; i<=9; i++) begin
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
@@ -88,6 +88,7 @@ module instr_register_test
     $display("  opcode = %0d (%s)", intf_lab.cb.instruction_word.opc, intf_lab.cb.instruction_word.opc.name);
     $display("  operand_a = %0d",   intf_lab.cb.instruction_word.op_a); // accesam semnalelel din packege
     $display("  operand_b = %0d\n", intf_lab.cb.instruction_word.op_b);
+    $display("  result    = %0d\n", intf_lab.cb.instruction_word.op_res);
   endfunction: print_results
 
 endmodule: instr_register_test
