@@ -1,0 +1,25 @@
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling interface tb_ifc
+# -- Compiling module instr_register_test
+# ** Error: ../lab01_testbench-interface/instr_register_test.sv(24): near "<=": syntax error, unexpected "<=", expecting '='
+# ** Error: ../lab01_testbench-interface/instr_register_test.sv(115): Undefined variable: op_a.
+# ** Warning: ../lab01_testbench-interface/instr_register_test.sv(115): (vlog-2175) An object or type with name 'op_a' already exists in Covergroup scope. Anonymous Coverpoint with generated name '#coverpoint__0#' will be created.
+# ** Error: ../lab01_testbench-interface/instr_register_test.sv(121): Undefined variable: op_b.
+# ** Warning: ../lab01_testbench-interface/instr_register_test.sv(121): (vlog-2175) An object or type with name 'op_b' already exists in Covergroup scope. Anonymous Coverpoint with generated name '#coverpoint__1#' will be created.
+# ** Error: ../lab01_testbench-interface/instr_register_test.sv(123): near ":": syntax error, unexpected ':', expecting ',' or '}'
+# ** Error: ../lab01_testbench-interface/instr_register_test.sv(135): near "(": syntax error, unexpected '(', expecting "IDENTIFIER" or "TYPE_IDENTIFIER"
+# ** Error: ../lab01_testbench-interface/top.sv(52): End label 'top' does not match module name on line 8.
+# ** Error: C:/modeltech_6.6d/win32/vlog failed.
+# Error in macro ./run.do line 20
+# C:/modeltech_6.6d/win32/vlog failed.
+#     while executing
+# "vlog -sv -timescale "1ns/1ns" -work work       -f sources.txt"
+#     invoked from within
+# "if {$compile_on || [batch_mode] == 0} {
+#   vlib work
+#   vlog -sv -timescale "1ns/1ns" -work work       -f sources.txt
+# }"
