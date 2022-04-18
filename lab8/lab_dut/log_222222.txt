@@ -1,0 +1,158 @@
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ************************FIRST HEADER***********************
+# ***********************************************************
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# Writing to register location 0: 
+#   opcode = 0 (ZERO)
+#   operand_a = 12
+#   operand_b = 2
+# 
+#   Time =                   20ns
+# Writing to register location 1: 
+#   opcode = 5 (MULT)
+#   operand_a = 5
+#   operand_b = 2
+# 
+#   Time =                   30ns
+# Writing to register location 2: 
+#   opcode = 0 (ZERO)
+#   operand_a = 6
+#   operand_b = 11
+# 
+#   Time =                   40ns
+# Writing to register location 3: 
+#   opcode = 1 (PASSA)
+#   operand_a = 5
+#   operand_b = 15
+# 
+#   Time =                   50ns
+# Writing to register location 4: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 12
+# 
+#   Time =                   60ns
+# Writing to register location 5: 
+#   opcode = 0 (ZERO)
+#   operand_a = 12
+#   operand_b = 6
+# 
+#   Time =                   70ns
+# Writing to register location 6: 
+#   opcode = 1 (PASSA)
+#   operand_a = 10
+#   operand_b = 13
+# 
+#   Time =                   80ns
+# Writing to register location 7: 
+#   opcode = 5 (MULT)
+#   operand_a = 7
+#   operand_b = 6
+# 
+#   Time =                   90ns
+# Writing to register location 8: 
+#   opcode = 5 (MULT)
+#   operand_a = 11
+#   operand_b = 5
+# 
+#   Time =                  100ns
+# Writing to register location 9: 
+#   opcode = 1 (PASSA)
+#   operand_a = 1
+#   operand_b = 6
+# 
+#   Time =                  110ns
+# 
+# Reading back the same register locations written...
+# Read from register location 0: 
+#   opcode = 0 (ZERO)
+#   operand_a = 12
+#   operand_b = 2
+# 
+#   Result = 0
+# 
+#   Time =                   125ns
+# Read from register location 1: 
+#   opcode = 5 (MULT)
+#   operand_a = 5
+#   operand_b = 2
+# 
+#   Result = 10
+# 
+#   Time =                   135ns
+# Read from register location 2: 
+#   opcode = 0 (ZERO)
+#   operand_a = 6
+#   operand_b = 11
+# 
+#   Result = 0
+# 
+#   Time =                   145ns
+# Read from register location 3: 
+#   opcode = 1 (PASSA)
+#   operand_a = 5
+#   operand_b = 15
+# 
+#   Result = 5
+# 
+#   Time =                   155ns
+# Read from register location 4: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 12
+# 
+#   Result = 12
+# 
+#   Time =                   165ns
+# Read from register location 5: 
+#   opcode = 0 (ZERO)
+#   operand_a = 12
+#   operand_b = 6
+# 
+#   Result = 0
+# 
+#   Time =                   175ns
+# Read from register location 6: 
+#   opcode = 1 (PASSA)
+#   operand_a = 10
+#   operand_b = 13
+# 
+#   Result = 10
+# 
+#   Time =                   185ns
+# Read from register location 7: 
+#   opcode = 5 (MULT)
+#   operand_a = 7
+#   operand_b = 6
+# 
+#   Result = 42
+# 
+#   Time =                   195ns
+# Read from register location 8: 
+#   opcode = 5 (MULT)
+#   operand_a = 11
+#   operand_b = 5
+# 
+#   Result = 55
+# 
+#   Time =                   205ns
+# Read from register location 9: 
+#   opcode = 1 (PASSA)
+#   operand_a = 1
+#   operand_b = 6
+# 
+#   Result = 1
+# 
+#   Time =                   215ns
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************

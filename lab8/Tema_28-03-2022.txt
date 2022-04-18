@@ -1,0 +1,4 @@
+Tema :
+Adaugam in structura de instr_register_pkg- un semnal care sa se numeasca result -tipul il definim noi
+in DUT in functie de ce tip de opcode avem,facem operatia corespunzatoare (instr_register_pkg)foloind un swithc case 
+Adaugam in print_result semnalul nostru 

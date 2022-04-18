@@ -1,0 +1,3 @@
+functia- timp de simulare 0
+task - contine timp de simulare (poate fi si 0)
+Ex de Task- initial-begin 

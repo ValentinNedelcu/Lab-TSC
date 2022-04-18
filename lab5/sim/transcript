@@ -9,10 +9,5 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# do run.do 2222222 
-# 2222222 
-# ** Error: can't set "::PrefMain(file)": couldn't open "../reports/regression_transcript/transcript_2222222": no such file or directory
-# Error in macro ./run.do line 7
-# can't set "::PrefMain(file)": couldn't open "../reports/regression_transcript/transcript_2222222": no such file or directory
-#     while executing
-# "transcript file ../reports/regression_transcript/transcript_$1"
+# do run.do 222222 
+# 222222 
