@@ -2,9 +2,9 @@
 # Script description: compiles the project sources &
 #                     starts the simulation
 #---------------------------------------------------------------------------------------
-
+echo $1
 # Set transcript file name
-## transcript file ../reports/regression_transcript/transcript_$1
+transcript file ../reports/regression_transcript/transcript_$1
 
 # Check if the sources must be re-compiled
 if {[file isdirectory work]} {
@@ -16,11 +16,11 @@ if {[file isdirectory work]} {
 # In [GUI_mode]: always compile sources / [regress_mode]: compile sources only once
 if {$compile_on || [batch_mode] == 0} {
   vlib work
-  vlog -sv -timescale "1ps/1ps" -work work       -f sources.txt
+  vlog -sv -timescale "1ns/1ns" -work work       -f sources.txt
 }
 
 # Load project
-  eval vsim -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva top
+  eval vsim -sv_seed $1 -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva top
 # eval vsim -novopt -quiet -coverage -notogglevlogints +notimingchecks +nowarnTSCALE +TESTNAME=$1 -sva top
 
 # Run log/wave commands

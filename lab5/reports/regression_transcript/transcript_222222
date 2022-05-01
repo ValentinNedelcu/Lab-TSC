@@ -1,4 +1,4 @@
-# 1
+# 0
 # Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
 # -- Compiling package instr_register_pkg
 # -- Compiling module instr_register
@@ -10,11 +10,11 @@
 # Top level modules:
 # 	top
 # vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -sv_seed 222222 -novopt top 
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\sim\work.instr_register_pkg
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\sim\work.top
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\sim\work.tb_ifc
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\sim\work.instr_register_test
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\sim\work.instr_register
+# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\tools\work.instr_register_pkg
+# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\tools\work.top
+# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\tools\work.tb_ifc
+# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\tools\work.instr_register_test
+# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab5\tools\work.instr_register
 # ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(99): Clocking block output intf_lab.cb.opcode is not legal in this
 # or another expression.
 #         Region: /top/test

@@ -5,7 +5,7 @@
 interface tb_ifc (input logic clk);
   //timeunit 1ns/1ns;
 
-  
+  // user-defined types are defined in instr_register_pkg.sv
   import instr_register_pkg::*;
 
   // ADD CODE TO DECLARE THE INTERFACE SIGNALS
@@ -16,22 +16,19 @@ interface tb_ifc (input logic clk);
   address_t      write_pointer, read_pointer;
   instruction_t  instruction_word;
 
- modport tb(
-   clocking cb;
- );
+  clocking cb @(clk);
+    output   load_en;
+    output   reset_n;
+    output   operand_a;
+    output   operand_b;
+    output   opcode;
+    output   write_pointer;
+    output   read_pointer;
+    input    instruction_word;
+endclocking;
 
- 
- clocking cb@(clk);
-   output  logic          clk,
- output load_en;
- output reset_n;
- output operand_a;
- output operand_b;
- output opcode;
- output write_pointer;
- output read_pointer;
- input instruction_word
-
-  endinterface: tb_ifc
+modport TB(
+  clocking cb
+);
 
 endinterface: tb_ifc

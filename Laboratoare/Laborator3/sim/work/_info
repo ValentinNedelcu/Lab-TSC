@@ -1,0 +1,107 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\Laboratoare\Laborator3\sim
+vinstr_register
+Z1 Mx1 6 sv_std 3 std
+Z2 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z3 Mx2 4 work 18 instr_register_pkg
+Z4 DXx4 work 18 instr_register_pkg 0 22 o6Gf`dknz>lQIh:d2fc5M0
+V3z9A3Eb_VM7O2iR_@`ig80
+r1
+!s85 0
+31
+I?UUf0BW=RjZ9Z931Q8<J_3
+S1
+Z5 dC:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\Laboratoare\Laborator3\sim
+Z6 w1647369364
+8../lab_dut/instr_register.sv
+F../lab_dut/instr_register.sv
+L0 9
+Z7 OE;L;6.6d;45
+Z8 o-sv -work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z9 !s92 -sv -work work +incdir+../../lab_dut +incdir+../../lab_dut +incdir+../lab01_testbench-interface +incdir+../lab01_testbench-interface +incdir+../lab01_testbench-interface -L mtiAvm -L mtiOvm -L mtiUPF
+!s100 hn3_Wza;blUEWcPfei=700
+!s105 instr_register_sv_unit
+Xinstr_register_pkg
+R1
+R2
+Vo6Gf`dknz>lQIh:d2fc5M0
+r1
+31
+Io6Gf`dknz>lQIh:d2fc5M0
+S1
+R5
+R6
+8../lab_dut/instr_register_pkg.sv
+F../lab_dut/instr_register_pkg.sv
+L0 5
+R7
+R8
+R9
+!s85 0
+!s100 CT>20gG0]oZl8PGJ6@31Y0
+vinstr_register_test
+R1
+R2
+R3
+R4
+VEBCnBoI9@;K2I3Z?DhHY42
+r1
+31
+IGUN3I`JOYdckn=]faBcEz1
+S1
+R5
+w1651405066
+8../lab01_testbench-interface/instr_register_test.sv
+F../lab01_testbench-interface/instr_register_test.sv
+L0 8
+R7
+R8
+R9
+!s85 0
+!s100 8O5Om_NFT2;aJIkBTo2Ge0
+!s105 instr_register_test_sv_unit
+Ytb_ifc
+R1
+R2
+R3
+R4
+V[2MM;6bj4cE27ld353ZQ90
+r1
+31
+I^ONZ4_nHkCbfcBHB7BSXh1
+S1
+R5
+R6
+8../lab01_testbench-interface/tb_ifc.sv
+F../lab01_testbench-interface/tb_ifc.sv
+L0 5
+R7
+R8
+R9
+!s85 0
+!s100 J^6>U[aX<_h>4F8j4^ABA1
+!s105 tb_ifc_sv_unit
+vtop
+R1
+R2
+R3
+R4
+Ve:gFW1CKLAXc^T:7k2HoD1
+r1
+31
+ISWjFd0]<9Rd[[P;bIo[6;1
+S1
+R5
+w1651405162
+8../lab01_testbench-interface/top.sv
+F../lab01_testbench-interface/top.sv
+L0 5
+R7
+R8
+R9
+!s85 0
+!s100 5[CP>WTV<jgKj9knmn7X<0
+!s105 top_sv_unit

@@ -1,0 +1,31 @@
+# Reading C:/modeltech_6.6d/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.6d Nov  1 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do run.do 
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# ** Error: ../lab_dut/instr_register_pkg.sv(6): near "/": syntax error, unexpected '/', expecting ';'
+# -- Compiling module instr_register
+# ** Error: ../lab_dut/instr_register.sv(14): near "operand_a": syntax error, unexpected "IDENTIFIER", expecting ')'
+# ** Error: ../lab01_testbench-interface/instr_register_test.sv(14): near ",": syntax error, unexpected ',', expecting "class"
+# ** Error: (vlog-7) Failed to open design unit file "../lab01_testbench-interface/tb_icf.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: C:/modeltech_6.6d/win32/vlog failed.
+# Error in macro ./run.do line 20
+# C:/modeltech_6.6d/win32/vlog failed.
+#     while executing
+# "vlog -sv -timescale "1ps/1ps" -work work       -f sources.txt"
+#     invoked from within
+# "if {$compile_on || [batch_mode] == 0} {
+#   vlib work
+#   vlog -sv -timescale "1ps/1ps" -work work       -f sources.txt
+# }"
