@@ -3,7 +3,7 @@
  * contains the interface to connect the testbench to the design
  **********************************************************************/
 interface tb_ifc (input logic clk);
-  timeunit 1ns/1ns;
+ // timeunit 1ns/1ns;
   
  // interconnecting signals
   
