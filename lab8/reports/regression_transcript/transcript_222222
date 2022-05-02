@@ -1,23 +1,15 @@
-# 1
-# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
-# -- Compiling package instr_register_pkg
-# -- Compiling module instr_register
-# -- Importing package instr_register_pkg
-# -- Compiling package instr_register_test_sv_unit
-# -- Importing package instr_register_pkg
-# -- Compiling module instr_register_test
-# -- Compiling interface tb_ifc
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
+# 0
 # vsim +notimingchecks +nowarnTSCALE +TESTNAME=222222 -coverage -notogglevlogints -sva -quiet -novopt top 
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab8\sim\work.instr_register_pkg
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab8\sim\work.top
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab8\sim\work.tb_ifc
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab8\sim\work.instr_register_test_sv_unit
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab8\sim\work.instr_register_test
-# Refreshing C:\Users\Andreea\Desktop\Facultate Vali\TSC\Lab-TSC\lab8\sim\work.instr_register
+# //  ModelSim SE 6.6d Nov  1 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
 # ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(28): Clocking block output #parent#.Laborator2_new.cb.opcode is not legal in this
 # or another expression.
 #         Region: /instr_register_test_sv_unit
@@ -52,8 +44,6 @@
 # or another expression.
 #         Region: /instr_register_test_sv_unit
 # ** Warning: (vsim-8634) Code was not compiled with coverage options.
-# ** Error: (vish-4014) No objects found matching '/top/test/seed'.
-# Executing ONERROR command at macro ./wave.do line 3
 # 
 # 
 # ***********************************************************
@@ -8485,8 +8475,3 @@
 # 
 # ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(98)
 #    Time: 12030 ns  Iteration: 2  Instance: /top/test
-# 1
-# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 98
-# Simulation Breakpoint: 1
-# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 98
-# MACRO ./run.do PAUSED at line 47
