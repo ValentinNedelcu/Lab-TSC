@@ -1,0 +1,126 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\FACULTATE\ANUL4_SEM2\TSC\Lab
+T_opt
+Z1 V>_VYRdR`Bm=Hd5>=087@20
+Z2 04 19 4 work instr_register_test fast 0
+Z3 =1-02004c4f4f50-622f011f-32e-2044
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;6.6d;45
+Z7 dD:\FACULTATE\ANUL4_SEM2\TSC\Lab
+T_opt1
+Z8 VnS7@j48>U=Zc_0@RY7YB^1
+Z9 04 3 4 work top fast 0
+Z10 =1-02004c4f4f50-622f0e83-6b-4c34
+Z11 o-quiet -auto_acc_if_foreign -work work
+Z12 n@_opt1
+R6
+R7
+T_opt2
+V5TQPgX1dSFabQ4XLM=VJc3
+R9
+Z13 =1-02004c4f4f50-6230c3cd-26d-1dfc
+R4
+Z14 n@_opt2
+R6
+R7
+vinstr_register
+Z15 Mx1 6 sv_std 3 std
+Z16 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z17 Mx2 4 work 18 instr_register_pkg
+Z18 DXx4 work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
+Z19 Izlgh4QQ_5WV`>EDVk6A=21
+Z20 V3z9A3Eb_VM7O2iR_@`ig80
+S1
+Z21 dD:\FACULTATE\ANUL4_SEM2\TSC\TSC\Lab
+Z22 w1647247554
+Z23 8D:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab_dut/instr_register.sv
+Z24 FD:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab_dut/instr_register.sv
+L0 9
+Z25 OE;L;6.6d;45
+r1
+31
+Z26 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z27 !s100 6^c4H@z>TICN;NJ=0DO5K2
+Z28 !s105 instr_register_sv_unit
+!s85 0
+Xinstr_register_pkg
+R15
+R16
+Z29 I:JTF@fFZEAY;_aRJ`=BP83
+Z30 V:JTF@fFZEAY;_aRJ`=BP83
+S1
+R21
+Z31 w1647247520
+Z32 8D:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab_dut/instr_register_pkg.sv
+Z33 FD:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab_dut/instr_register_pkg.sv
+L0 5
+R25
+r1
+31
+R26
+Z34 !s100 V^fH5UCOegY6PL:OBDSV^3
+!s85 0
+vinstr_register_test
+R15
+R16
+R17
+R18
+Z35 I?Io0gEZAlXzXCVHhC0Mj62
+Z36 VEBCnBoI9@;K2I3Z?DhHY42
+S1
+R21
+Z37 w1647362989
+Z38 8D:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab01_testbench-interface/instr_register_test.sv
+Z39 FD:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab01_testbench-interface/instr_register_test.sv
+L0 9
+R25
+r1
+31
+R26
+Z40 !s105 instr_register_test_sv_unit
+Z41 !s100 SH_Z`H3?Pbn`H[TS[6mY[1
+!s85 0
+Ytb_ifc
+R15
+R16
+R17
+R18
+Z42 I8=1FCZV]z3V;AEThG[L=P2
+Z43 V[2MM;6bj4cE27ld353ZQ90
+S1
+R21
+Z44 w1647249558
+Z45 8D:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab01_testbench-interface/tb_ifc.sv
+Z46 FD:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R25
+r1
+31
+R26
+Z47 !s100 BC84V@QW:MOJh<?G>;_C32
+Z48 !s105 tb_ifc_sv_unit
+!s85 0
+vtop
+R15
+R16
+R17
+R18
+Z49 INTFBR_aeTMSYlUR[NnVj^1
+Z50 Ve:gFW1CKLAXc^T:7k2HoD1
+S1
+R21
+Z51 w1647362924
+Z52 8D:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab01_testbench-interface/top.sv
+Z53 FD:/FACULTATE/ANUL4_SEM2/TSC/TSC/Lab/lab01_testbench-interface/top.sv
+L0 5
+R25
+r1
+31
+R26
+Z54 !s100 =Dk=VDm79VE6TG]jb]h9H0
+Z55 !s105 top_sv_unit
+!s85 0
